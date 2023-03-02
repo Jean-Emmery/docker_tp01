@@ -12,11 +12,9 @@
 ```docker cp ./ mynginx1:/usr/share/nginx/html```
 
 
-#Builder une image
-#a. A l’aide d’un Dockerfile, créer une image (commande docker build)
+# Builder une image
+# a. A l’aide d’un Dockerfile, créer une image (commande docker build)
 ```docker build -t custom-nginx .```
 ```docker run -p 80:80 --name my-custom-nginx-container -d custom-nginx```
-#b. Exécuter cette nouvelle image de manière à servir la page html (commande docker run)
-#c. Quelles différences observez-vous entre les procédures 5. et 6. ? Avantages et inconvénients de l’une et de l’autre méthode ? (Mettre en relation ce qui est
-observé avec ce qui a été présenté pendant le cours)
-docker run -p 80:80 --name my-custom-nginx-container -d custom-nginx
+# b. Exécuter cette nouvelle image de manière à servir la page html (commande docker run)
+# c. Quelles différences observez-vous entre les procédures 5. et 6. ? Avantages et inconvénients de l’une et de l’autre méthode ? (Mettre en relation ce qui est observé avec ce qui a été présenté pendant le cours) docker run -p 80:80 --name my-custom-nginx-container -d custom-nginx
