@@ -1,0 +1,31 @@
+version: '3'
+
+services:
+  web:
+    image: praqma/network-multitool
+    command: sleep 300
+    networks:
+      frontend:
+        aliases:
+          - web
+  app:
+    image: praqma/network-multitool
+    command: sleep 300
+    networks:
+      frontend:
+        aliases:
+          - app
+      backend:
+        aliases:
+          - app
+  db:
+    image: praqma/network-multitool
+    command: sleep 300
+    networks:
+      backend:
+        aliases:
+          - db
+
+networks:
+  frontend:
+  backend:
