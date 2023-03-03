@@ -50,7 +50,8 @@ Il est intéréssant car il permet de gérer plusieurs conteneurs, faciliter le 
 
 
 **b. Quelles lignes du résultat de la commande docker inspect justifient ce comportement ?**<br>
-``` docker inspect <id_du_conteneur> ```<br>
+``` docker network inspect tp01_backend ```<br>
+``` docker network inspect tp01_frontend ```<br>
 ``` La partie "Network" montre qu'ils sont dans un réseau différent les uns des autres. ```<br>
 
 **c. Dans quelle situation réelles (avec quelles images) pourrait-on avoir cette configuration réseau ? Dans quel but ?**<br>
