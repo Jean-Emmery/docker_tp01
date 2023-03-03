@@ -36,7 +36,7 @@
 
 **a. Qu’apporte le fichier docker-compose par rapport aux commandes docker run ? Pourquoi est-il intéressant ? (cf. ce qui a été présenté pendant le cours)**<br>
 ```
-- Docker-compose permet de décrire la configuration d’un ou plusieurs services Docker ainsi que : leurs volumes et leurs réseaux
+Docker-compose permet de décrire la configuration d’un ou plusieurs services Docker ainsi que : leurs volumes et leurs réseaux
 Il est intéréssant car il permet de gérer plusieurs conteneurs, faciliter le déploiement et la portabilité
 ```
 <br>
@@ -50,7 +50,7 @@ Il est intéréssant car il permet de gérer plusieurs conteneurs, faciliter le 
 
 
 **b. Quelles lignes du résultat de la commande docker inspect justifient ce comportement ?**<br>
-``` docker inspect "id_du_conteneur"```<br>
+``` docker inspect <id_du_conteneur> ```<br>
 ``` La partie "Network" montre qu'ils sont dans un réseau différent les uns des autres. ```<br>
 
 **c. Dans quelle situation réelles (avec quelles images) pourrait-on avoir cette configuration réseau ? Dans quel but ?**<br>
